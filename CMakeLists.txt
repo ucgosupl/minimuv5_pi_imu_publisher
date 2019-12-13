@@ -35,7 +35,7 @@ target_link_libraries(listener
 add_library(LSM6 src/LSM6DS33.cpp)
 add_library(LIS3 src/LIS3MDL.cpp)
 add_library(I2C src/I2CBus.cpp)
-add_library(IMU src/MinIMU9.cpp)
+add_library(IMU src/MinIMU9.cpp src/LSM6DS33.cpp src/LIS3MDL.cpp)
 add_library(IMU_OP src/minimu9-ahrs.cpp)
 add_executable(talker src/talker.cpp)
 target_link_libraries(talker
