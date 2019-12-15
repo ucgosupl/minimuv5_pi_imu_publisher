@@ -279,4 +279,4 @@ static inline __s32 i2c_smbus_block_process_call(int file, __u8 command,
 
 }
 
-#endif __I2C_WRAPPERS
+#endif /* __I2C_WRAPPERS */
