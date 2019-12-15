@@ -2,16 +2,15 @@
 #include "std_msgs/String.h"
 #include "sensor_msgs/Imu.h"
 
+#include "i2c-wrapper.h"
+
 #include <sstream>
 #include <time.h>
 #include <sys/time.h>
-#include <sys/ioctl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <linux/i2c-dev.h>
-
 
 #include "minimu9-ahrs.h"
 
